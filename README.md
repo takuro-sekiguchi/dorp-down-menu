@@ -1,6 +1,6 @@
 # ドロップダウンメニュー付きウェブサイト
 
-[デモサイトはこちら](https://taku-web3.com/project/drop-down-menu/index.html)
+[デモサイトはこちらです](https://taku-web3.com/project/drop-down-menu/index.html)
 
 ## ■改めて学んだこと
 - navのサブメニューの付け方
