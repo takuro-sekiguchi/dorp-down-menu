@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menuBar {
+  background-color: #5599c7;
+  width: 100%;
+  text-align: center;
+}
+
+.menuBar ul li {
+  display: inline-block;
+  width: 120px;
+  margin: 0 30px;
+  padding: 25px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menuBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+} 
+
+.menuBar ul .active,
+.menuBar ul li:hover
+{
+  background-color: #84c3ef;
+}
+
+.subMenu-1 {
+  position: absolute;
+  background-color: #5599c7;
+  margin-top: 20px;
+  padding: 10px 0;
+  transform: translateX(-40px);
+  display: none;
+}
+
+.menuBar ul li:hover .subMenu-1 {
+  /* display: none;を解除するため */
+  display: block;
+}
+
+.subMenu-1 ul li {
+  /* インライン要素からblock要素にするため */
+  display: block;
+  width: 140px;
+  border-bottom: 1px dotted #fff;
+}
+
+.subMenu-1 ul li:last-child {
+  border: none;
+}
